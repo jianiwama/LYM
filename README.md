@@ -4,6 +4,7 @@ public static GoPushSocket goPushSocket;
 
 public static void main(String[] args) {
 	// TODO Auto-generated method stub
+	
 	goPushSocket = new GoPushSocket(key,domain,maxPublicServerId,maxPrivateServerId);//初始化GoPushSocket
 	goPushSocket.setGoPushSocketTime(HEART_BEAT_TIME);//设置心跳时间
 	goPushSocket.setGoPushSocketListener(new GoPushSocketListener() {
